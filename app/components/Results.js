@@ -5,6 +5,7 @@ var styles = require('../styles');
 var UserDetails = require('../components/UserDetails');
 var UserDetailsWrapper = require('../components/UserDetailsWrapper');
 var MainContainer = require('../components/MainContainer');
+var Loading = require('../components/Loading');
 
 // function puke(obj){
 //     return <pre>{JSON.stringify(obj,2,' ')}</pre>
@@ -22,7 +23,7 @@ function Results(props) {
 
     if(props.isLoading === true){
         return (
-            <p> LOADING </p>
+            <Loading speed={100} text="One Moment"/>
         )
     }
 
